@@ -1,0 +1,13 @@
+#text-data {
+	padding-top: 5em;
+	padding-bottom: 5em;
+	width: 728px;
+	margin: 0 auto;
+	font-family: "Vollkorn";
+}
+
+/* Image captions */
+img + em {
+	display: block;
+	font-size: 12px;
+}
