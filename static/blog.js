@@ -18,7 +18,7 @@ $(function() {
 	source = source + ".md";
 
 	$.ajax({
-		url: "/data/" + source
+		url: "data/" + source
 	}).done(function(data) {
 
 		marked.setOptions({
