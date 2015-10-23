@@ -39,8 +39,7 @@ Paragraphs must be separated by a blank line. Basic formatting of *italics* and 
 You can also make `inline code` to add code into other things.
 
 ```
-// `for` is Go's only looping construct. Here are
-// three basic types of `for` loops.
+// `for` is Go's only looping construct. I'm padding this comment to demonstrate code scrolling.
 
 package main
 
