@@ -22,6 +22,9 @@ $(function() {
 	}).done(function(data) {
 
 		marked.setOptions({
+			highlight: function (code) {
+				return hljs.highlightAuto(code).value;
+			},
 			sanitize: true,
 			smartypants: true
 		});

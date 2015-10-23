@@ -1,7 +1,7 @@
 #text-data {
 	padding-top: 3em;
 	padding-bottom: 5em;
-	width: 728px;
+	width: 800px;
 	margin: 0 auto;
 	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 0.05em;
@@ -11,6 +11,10 @@
 	-webkit-font-feature-settings: "kern";
 	-moz-font-feature-settings: "kern";
 	-moz-font-feature-settings: "kern=1";
+}
+
+pre > code {
+	font-family: 'Source Code Pro';
 }
 
 a {
@@ -23,13 +27,14 @@ a:visited {
 
 p {
 	color: #333;
-	line-height: 1.7;
+	line-height: 2;
 	font-size: 1.1em;
-	padding-bottom: 0.5em;
+	padding-bottom: 0.7em;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	color: #222;
+	text-indent: -1em;
 }
 
 /* Image captions */

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /license
+Disallow: /data
+Disallow: static
