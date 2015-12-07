@@ -25,7 +25,13 @@ $(function() {
 			highlight: function (code) {
 				return hljs.highlightAuto(code).value;
 			},
-			sanitize: true,
+
+			/*  I'm setting this to false because blog articles are assumed to be
+				trusted. We can use this to create special styling in certain articles
+				without having to redo the entire system
+			*/
+			sanitize: false,
+
 			smartypants: true
 		});
 
