@@ -4,7 +4,7 @@ $(function() {
 	if (url.lastIndexOf("?") > -1) {
 
 		url_source = url.substring(url.lastIndexOf("?") + 1);
-		source = url_source.replace(/[^a-z0-9]/gi, '').toLowerCase();
+		source = url_source.replace(/[^\-a-z0-9]/gi, '').toLowerCase();
 
 		/* All pages should be lowercase */
 		if (source !== url_source) {
@@ -18,7 +18,8 @@ $(function() {
 	source = source + ".md";
 
 	$.ajax({
-		url: "data/" + source
+		url: "data/" + source,
+        dataType: "text"
 	}).done(function(data) {
 
 		marked.setOptions({
@@ -37,7 +38,7 @@ $(function() {
 
         $("#text-data").html(marked(data));
 
-	}).fail(function() {
+	}).error(function(error) {
 		window.location = url.substring(0, url.lastIndexOf("?") + 1) + "404";
 	});
 });
