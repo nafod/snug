@@ -4,7 +4,7 @@ $(function() {
 	if (url.lastIndexOf("?") > -1) {
 
 		url_source = url.substring(url.lastIndexOf("?") + 1);
-		source = url_source.replace(/[^a-z0-9\-]/gi, '').toLowerCase();
+		source = url_source.replace(/[^a-z0-9]/gi, '').toLowerCase();
 
 		/* All pages should be lowercase */
 		if (source !== url_source) {
